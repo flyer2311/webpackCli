@@ -1,0 +1,23 @@
+{
+  // 预设
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage" // polyfill按需引入
+      }
+    ]
+  ],
+  // 插件配置
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": 2,
+        "helpers": true,
+        "regenerator": true,
+        "useESModules": false
+      }
+    ]
+  ]
+}
