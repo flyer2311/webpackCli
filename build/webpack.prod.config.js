@@ -34,7 +34,7 @@ module.exports = {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: 'css-loader',
+          use: ['css-loader','postcss-loader'],
           publicPath: '../' //修改图片路径
         })
       },
